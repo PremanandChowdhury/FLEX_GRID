@@ -1,0 +1,12 @@
+/* ---- 1st Way ---- */
+/* ---- 2nd Way ---- */
+
+.grid {
+  display: grid;
+  /* ---- 1st Way ---- */
+  /* grid-template-rows: 100px 200px; */
+  /* grid-template-columns: 200px auto 150px; */
+
+  /* ---- 2nd Way ---- */
+  grid-template: 100px 100px / 200px auto 150px;
+}
