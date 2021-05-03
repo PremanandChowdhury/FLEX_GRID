@@ -17,3 +17,11 @@
   /* ---- 2nd Way ---- */
   grid-gap: 20px 10px;
 }
+
+/* ---- Ordering the Grid Item ---- */
+.grid div:nth-child(1) {
+  order: 1;
+}
+.grid div:nth-child(6) {
+  order: -1;
+}
