@@ -8,17 +8,17 @@
   /* grid-template-columns: 200px auto 150px; */
 
   /* ---- 2nd Way ---- */
-  grid-template: 100px 100px / 200px auto 150px;
+  grid-template: [row1-start] 100px [row1-end row2-start] 100px / 200px auto 150px;
 }
 
 /* ---- Using span ---- */
 .grid div:nth-child(1) {
-  grid-row: 1 / span 2;
+  grid-row: row1-start / span 2;
 }
 
 /* ---- 1st Way ---- */
 .grid div:nth-child(2) {
-  grid-row-start: 2;
+  grid-row-start: row2-start;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
