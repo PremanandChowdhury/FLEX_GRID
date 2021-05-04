@@ -3,28 +3,29 @@
 
 .grid {
   display: grid;
-  grid-template: 100px 100px 100px / 200px auto 150px;
-  /* period ('.') refers to empty space */
-  grid-template-areas:
-    'i5 . i1'
-    'i2 i3 i1'
-    'i4 i4 i6';
+  /* ---- Use of repeat in layouts ---- */
+  grid-template:
+    repeat(3, 70px) /
+    repeat(12, [small] 20px [large] 40px);
+  /* grid-template: 
+    repeat (3, 100px) / 
+    repeat(12, [col] 20px 40px); */
 }
 .grid div:nth-child(1) {
-  grid-area: i1;
+  grid-column: 1 / span 24;
 }
 .grid div:nth-child(2) {
-  grid-area: i2;
+  grid-column: small 1 / large 3;
 }
 .grid div:nth-child(3) {
-  grid-area: i3;
+  grid-column: auto / span 6;
 }
 .grid div:nth-child(4) {
-  grid-area: i4;
+  grid-column: auto / span 6;
 }
 .grid div:nth-child(5) {
-  grid-area: i5;
+  grid-column: auto / span 12;
 }
 .grid div:nth-child(6) {
-  grid-area: i6;
+  grid-column: auto / span 12;
 }
