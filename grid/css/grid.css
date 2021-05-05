@@ -1,15 +1,27 @@
 /* ---- 1st Way ---- */
 /* ---- 2nd Way ---- */
 
+/*---- fr Unit ----*/
 .grid {
   display: grid;
-  /* ---- Use of repeat in layouts ---- */
+  grid-gap: 10px;
+  /* grid-template: repeat(3, 100px) / repeat(3, 1fr); */
+  /* grid-template: repeat(3, 100px) / 100px 1fr 1fr; */
+  /* grid-template: repeat(3, 100px) / 1fr 1fr 1fr; */
+  /* grid-template: repeat(3, 100px) / 1fr 2fr 1fr; */
+  grid-template: repeat(3, 100px) / repeat(6, 1fr);
+}
+
+/* 
+.grid {
+  display: grid;
+  ---- Use of repeat in layouts ----
   grid-template:
     repeat(3, 70px) /
     repeat(12, [small] 20px [large] 40px);
-  /* grid-template: 
+  grid-template: 
     repeat (3, 100px) / 
-    repeat(12, [col] 20px 40px); */
+    repeat(12, [col] 20px 40px);
 }
 .grid div:nth-child(1) {
   grid-column: 1 / span 24;
@@ -28,4 +40,4 @@
 }
 .grid div:nth-child(6) {
   grid-column: auto / span 12;
-}
+} */
