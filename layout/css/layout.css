@@ -1,3 +1,72 @@
+* {
+  color: #f3730a;
+  box-sizing: border-box;
+  font-family: Ubuntu, Helvetica, Verdana, Arial, sans-serif;
+  font-weight: bold;
+  background-color: #47463e;
+}
+body {
+  padding: 20px;
+}
 h1 {
+  padding: 1rem 0;
   text-align: center;
+}
+hr {
+  margin: 1rem 0;
+}
+.container1 > *,
+.container2 > * {
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+}
+
+/* Layout 1 CSS */
+.container1 {
+  display: grid;
+  grid-template-rows: 60px 240px 120px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.header {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  background-color: #5f686d;
+}
+.main {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  background-color: #cccfd1;
+}
+.sidebar {
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+  background-color: #afb8bc;
+}
+.footer {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 3;
+  background-color: #67676f;
+}
+
+/* Layout 2 CSS */
+.container2 {
+  display: grid;
+  grid-template: repeat(2, 100px) / repeat(4, auto);
+  grid-gap: 10px;
+}
+.container2 > div {
+  background-color: #afb8bc;
+}
+div:nth-child(1) {
+  order: 2;
+}
+div:nth-child(3) {
+  order: -1;
+}
+div:nth-child(5) {
+  order: 1;
 }
