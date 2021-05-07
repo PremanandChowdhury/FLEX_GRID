@@ -17,7 +17,8 @@ hr {
 }
 .container1 > *,
 .container2 > *,
-.container3 > * {
+.container3 > *,
+.container4 > * {
   border-radius: 5px;
   padding: 25px;
   text-align: center;
@@ -113,4 +114,11 @@ div:nth-child(5) {
 .footer-l3 {
   grid-area: footer;
   background-color: #747487;
+}
+
+/* Layout 4 CSS */
+.container4 {
+  display: grid;
+  grid-template: repeat(6, 50px) / repeat(12, 1fr);
+  grid-gap: 5px;
 }
