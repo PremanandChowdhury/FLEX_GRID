@@ -1,9 +1,9 @@
 * {
-  color: #f3730a;
+  color: #4f01ef;
   box-sizing: border-box;
   font-family: Ubuntu, Helvetica, Verdana, Arial, sans-serif;
   font-weight: bold;
-  background-color: #47463e;
+  background-color: #f9f9f900;
 }
 body {
   padding: 20px;
@@ -16,12 +16,14 @@ hr {
   margin: 1rem 0;
 }
 .container1 > *,
-.container2 > * {
+.container2 > *,
+.container3 > * {
   border-radius: 5px;
   padding: 25px;
   text-align: center;
   font-family: Ubuntu, sans-serif;
   font-size: 20px;
+  background-color: #85939b;
 }
 
 /* Layout 1 CSS */
@@ -34,7 +36,7 @@ hr {
 .header {
   grid-row: 1 / span 1;
   grid-column: 1 / span 3;
-  background-color: #5f686d;
+  background-color: #85939b;
 }
 .main {
   grid-row: 2 / span 1;
@@ -49,7 +51,7 @@ hr {
 .footer {
   grid-row: 3 / span 1;
   grid-column: 1 / span 3;
-  background-color: #67676f;
+  background-color: #747487;
 }
 
 /* Layout 2 CSS */
@@ -69,4 +71,46 @@ div:nth-child(3) {
 }
 div:nth-child(5) {
   order: 1;
+}
+
+/* Layout 3 CSS */
+.container3 {
+  display: grid;
+  grid-template: 60px 120px 240px 120px 60px / repeat(4, 1fr);
+  grid-template-areas:
+    'header header header header'
+    'image image text text'
+    'main main main main'
+    'links links links ads'
+    'footer footer footer footer';
+  grid-gap: 10px;
+}
+
+.header-l3 {
+  grid-area: header;
+  background-color: #747487;
+}
+.hero-img {
+  grid-area: image;
+  background-color: #c2c2d8;
+}
+.hero-text {
+  grid-area: text;
+  background-color: #74749e;
+}
+.content {
+  grid-area: main;
+  background-color: #d4cbd2;
+}
+.content-img {
+  grid-area: links;
+  background-color: #69859c;
+}
+.content-text {
+  grid-area: ads;
+  background-color: #69859c;
+}
+.footer-l3 {
+  grid-area: footer;
+  background-color: #747487;
 }
