@@ -18,7 +18,8 @@ hr {
 .container1 > *,
 .container2 > *,
 .container3 > *,
-.container4 > * {
+.container4 > *,
+.container5 > * {
   border-radius: 5px;
   padding: 25px;
   text-align: center;
@@ -121,4 +122,16 @@ div:nth-child(5) {
   display: grid;
   grid-template: repeat(6, 50px) / repeat(12, 1fr);
   grid-gap: 5px;
+}
+
+/* Layout 5 CSS */
+.container5 {
+  display: grid;
+  width: 540px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 200px)); */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 200px)); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
