@@ -9,9 +9,11 @@
   /* grid-template: repeat(3, 100px) / 100px 1fr 1fr; */
   /* grid-template: repeat(3, 100px) / 1fr 1fr 1fr; */
   /* grid-template: repeat(3, 100px) / 1fr 2fr 1fr; */
-  grid-template: repeat(3, 100px) / repeat(6, 1fr);
-
-  
+  /* grid-template: repeat(3, 100px) / repeat(6, 1fr);   */
+  grid-template: repeat(3, 100px) / repeat(auto-fill, 200px);
+  /* justify-items: start; */
+  /* justify-items: end; */
+  justify-items: center;
 }
 
 /* 
@@ -43,5 +45,3 @@
 .grid div:nth-child(6) {
   grid-column: auto / span 12;
 } */
-
-
