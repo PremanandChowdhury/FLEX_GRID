@@ -11,7 +11,9 @@
   /* grid-template: repeat(3, 100px) / 1fr 2fr 1fr; */
   /* grid-template: repeat(3, 100px) / repeat(6, 1fr);   */
   /* grid-template: repeat(3, 100px) / repeat(auto-fill, 200px); */
-  grid-template: repeat(3, 100px) / 200px auto;
+  /* grid-template: repeat(3, 100px) / 200px auto; */
+
+  grid-template: repeat(3, 100px) / 100px auto;
 
   /* justify-items: stretch; */ /* Default */
   /* justify-items: start; */
@@ -29,7 +31,17 @@
   /* justify-content: center; */
   /* justify-content: space-around; */
   /* justify-content: space-between; */
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+
+  height: 400px;
+  border: 1px solid #fff;
+  /*align-content: stretch;*/  /* Default */
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  align-content: space-evenly;
 }
 
 /* 
