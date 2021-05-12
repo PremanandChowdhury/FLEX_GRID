@@ -10,16 +10,26 @@
   /* grid-template: repeat(3, 100px) / 1fr 1fr 1fr; */
   /* grid-template: repeat(3, 100px) / 1fr 2fr 1fr; */
   /* grid-template: repeat(3, 100px) / repeat(6, 1fr);   */
-  grid-template: repeat(3, 100px) / repeat(auto-fill, 200px);
-  /* justify-items: stretch; */
+  /* grid-template: repeat(3, 100px) / repeat(auto-fill, 200px); */
+  grid-template: repeat(3, 100px) / 200px auto;
+
+  /* justify-items: stretch; */ /* Default */
   /* justify-items: start; */
   /* justify-items: end; */
   /* justify-items: center; */
 
-  /* align-items:stretch; */
+  /* align-items:stretch;*/ /* Default */
   /* align-items: start; */
   /* align-items: end; */
-  align-items: center;
+  /* align-items: center; */
+
+  /* justify-content: stretch;*/ /* Default */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
 }
 
 /* 
