@@ -11,9 +11,15 @@
   /* grid-template: repeat(3, 100px) / 1fr 2fr 1fr; */
   /* grid-template: repeat(3, 100px) / repeat(6, 1fr);   */
   grid-template: repeat(3, 100px) / repeat(auto-fill, 200px);
+  /* justify-items: stretch; */
   /* justify-items: start; */
   /* justify-items: end; */
-  justify-items: center;
+  /* justify-items: center; */
+
+  /* align-items:stretch; */
+  /* align-items: start; */
+  /* align-items: end; */
+  align-items: center;
 }
 
 /* 
